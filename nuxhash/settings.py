@@ -13,7 +13,7 @@ DEFAULT_SETTINGS = {
     'nicehash': {
         'wallet': '',
         'workername': 'nuxhash',
-        'region': 'usa',
+        'region': 'usa-east',
         'api_organization': '',
         'api_key': '',
         'api_secret': ''
@@ -26,7 +26,7 @@ DEFAULT_SETTINGS = {
         'units': 'mBTC'
         },
     'donate': {
-        'optout': False
+        'optout': True
         },
     'excavator_miner': {
         'listen': '',

@@ -67,7 +67,7 @@ def main():
     else:
         log_level = logging.WARN
     logging.basicConfig(format='%(asctime)s %(levelname)s: %(message)s',
-                        level=log_level)
+                        level=log_level, filename='mining.log', filemode='w')
 
     all_devices = nvidia_devices()
     nx_settings = settings.load_settings(config_dir)
@@ -139,7 +139,7 @@ def initial_setup():
 
     region = ''
     while region not in ['eu', 'usa', 'hk', 'jp', 'in', 'br']:
-        region = input('Region (eu/usa/hk/jp/in/br): ')
+        region = input('Region (check with nicehash, default=usa-east): ')
 
     print()
     return wallet, workername, region
