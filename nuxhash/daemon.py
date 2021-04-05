@@ -137,9 +137,7 @@ def initial_setup():
     if workername == '':
         workername = 'nuxhash'
 
-    region = ''
-    while region not in ['eu', 'usa', 'hk', 'jp', 'in', 'br']:
-        region = input('Region (check with nicehash, default=usa-east): ')
+    region = input('Region (check with nicehash, default=usa-east): ').lower().strip()
 
     print()
     return wallet, workername, region
